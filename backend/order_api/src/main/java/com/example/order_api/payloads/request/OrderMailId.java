@@ -1,22 +1,22 @@
 package com.example.order_api.payloads.request;
 
 public class OrderMailId {
-    private Long orderId;
+    private String orderId;
     private String userEmail;
 
     public OrderMailId() {
     }
 
-    public OrderMailId(Long orderId, String userEmail) {
+    public OrderMailId(String orderId, String userEmail) {
         this.orderId = orderId;
         this.userEmail = userEmail;
     }
 
-    public Long getOrderId() {
+    public String getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(Long orderId) {
+    public void setOrderId(String orderId) {
         this.orderId = orderId;
     }
 

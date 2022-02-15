@@ -13,6 +13,15 @@ public class ProductMerchantDto {
 
     private MerchantDto merchant;
 
+    private Long orderCount;
+
+    public Long getOrderCount() {
+        return orderCount;
+    }
+
+    public void setOrderCount(long orderCount) {
+        this.orderCount = orderCount;
+    }
 
     public String getProductId() {
         return productId;

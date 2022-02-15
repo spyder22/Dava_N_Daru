@@ -2,17 +2,17 @@ package com.example.order_api.dto;
 
 public class MerchantDto {
 
-    private Long merchantId;
+    private String merchantId;
     private String usp;
     private Long stock;
     private Double price;
     private Double productRating;
 
-    public Long getMerchantId() {
+    public String getMerchantId() {
         return merchantId;
     }
 
-    public void setMerchantId(Long merchantId) {
+    public void setMerchantId(String merchantId) {
         this.merchantId = merchantId;
     }
 
@@ -40,11 +40,11 @@ public class MerchantDto {
         this.price = price;
     }
 
-    public Double getProductRating() {
+    public double getProductRating() {
         return productRating;
     }
 
-    public void setProductRating(Double productRating) {
+    public void setProductRating(double productRating) {
         this.productRating = productRating;
     }
 }

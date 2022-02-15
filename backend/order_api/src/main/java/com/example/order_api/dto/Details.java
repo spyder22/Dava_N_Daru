@@ -2,7 +2,7 @@ package com.example.order_api.dto;
 
 public class Details {
     private String productId;
-    private Long merchantId;
+    private String merchantId;
     private Long quantity;
     private Double subTotal;
 
@@ -22,11 +22,11 @@ public class Details {
         this.productId = productId;
     }
 
-    public Long getMerchantId() {
+    public String getMerchantId() {
         return merchantId;
     }
 
-    public void setMerchantId(Long merchantId) {
+    public void setMerchantId(String merchantId) {
         this.merchantId = merchantId;
     }
 

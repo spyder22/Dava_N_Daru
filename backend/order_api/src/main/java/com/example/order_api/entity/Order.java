@@ -9,11 +9,21 @@ import java.util.List;
 @Document
 public class Order {
     @Id
-    private Long orderId;
+    private String orderId;
+
+    private String email;
 
     List<Details> details;
 
     private Double grandTotal;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public Double getGrandTotal() {
         return grandTotal;
@@ -23,11 +33,11 @@ public class Order {
         this.grandTotal = grandTotal;
     }
 
-    public Long getOrderId() {
+    public String getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(Long orderId) {
+    public void setOrderId(String orderId) {
         this.orderId = orderId;
     }
 

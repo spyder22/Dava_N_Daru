@@ -5,8 +5,14 @@ import com.example.order_api.dto.Products;
 import java.util.List;
 
 public class OrderItems {
-    private Long orderId;
+    private String orderId;
     private String userEmail;
+    List<Products> productsList;
+
+    private Double grandTotal;
+
+
+
 
     public String getUserEmail() {
         return userEmail;
@@ -16,15 +22,13 @@ public class OrderItems {
         this.userEmail = userEmail;
     }
 
-    List<Products> productsList;
 
-    private Double grandTotal;
 
-    public Long getOrderId() {
+    public String getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(Long orderId) {
+    public void setOrderId(String orderId) {
         this.orderId = orderId;
     }
 
